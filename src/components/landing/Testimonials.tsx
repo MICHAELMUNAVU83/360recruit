@@ -26,7 +26,6 @@ export default function Testimonials() {
   return (
     <article className="w-full py-16 md:py-24 bg-gradient-to-b from-amber-50/30 to-white overflow-hidden">
       <div className="max-w-[95%] lg:max-w-[85%] mx-auto px-4 sm:px-6 lg:px-8">
-        
         <div className="text-center mb-12 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -73,22 +72,13 @@ export default function Testimonials() {
                   key={testimonial.id}
                   className="bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100"
                 >
-                  {/* Header with Avatar and Info */}
                   <div className="flex items-start gap-4 mb-4">
                     <div className="flex-shrink-0">
-                      {testimonial.avatar ? (
-                        <img
-                          src={testimonial.avatar}
-                          alt={testimonial.name}
-                          className="w-14 h-14 rounded-full object-cover"
-                        />
-                      ) : (
-                        <div className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center">
-                          <span className="text-white text-xl font-semibold">
-                            {testimonial.name.charAt(0)}
-                          </span>
-                        </div>
-                      )}
+                      <div className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center">
+                        <span className="text-white text-xl font-semibold">
+                          {testimonial.name.charAt(0)}
+                        </span>
+                      </div>
                     </div>
 
                     {/* Name and Role */}
